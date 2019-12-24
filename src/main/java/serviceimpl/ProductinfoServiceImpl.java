@@ -13,6 +13,9 @@ public class ProductinfoServiceImpl implements ProductinfoService {
     @Autowired
     ProductinfoMapper pfm;
 
+    public List<Productinfo> selectLike(String pName) {
+        return pfm.selectLike(pName);
+    }
 
     public List<Productinfo> showshop(Integer pid) {
         return pfm.showshop(pid);

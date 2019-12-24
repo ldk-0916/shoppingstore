@@ -18,6 +18,10 @@
     P_ID, P_CODE, P_NAME, P_TYPE, BRAND, PIC, P_NUM, PRICE, SALE, INTRO, STATUS
   </sql>
 
+  <select id="selectLike" resultMap="BaseResultMap">
+    SELECT * FROM productinfo WHERE P_NAME=#{pName,jdbcType=VARCHAR} LIKE '%_%'
+  </select>
+  
   <select id="showshop" resultMap="BaseResultMap">
     select <include refid="Base_Column_List" /> from productinfo where P_ID = #{pId,jdbcType=VARCHAR}
   </select>

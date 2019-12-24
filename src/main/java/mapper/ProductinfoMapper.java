@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface ProductinfoMapper {
+    List<Productinfo> selectLike(String pName);
+
     List<Productinfo> showshop(Integer pid);
 
     List<Productinfo> selectAllShopByP_type(String p_type);

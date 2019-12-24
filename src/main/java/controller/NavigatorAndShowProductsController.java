@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import serviceimpl.ProductinfoServiceImpl;
 import serviceimpl.WebInfoServiceImpl;
 
+import javax.servlet.annotation.WebServlet;
 import java.util.List;
 
 @RestController
@@ -63,5 +64,10 @@ public class NavigatorAndShowProductsController {
     public List<Productinfo> showshop(@RequestParam Integer pid){
         /*根据sql语句按照pid查询当前商品的详细信息*/
         return psi.showshop(pid);
+    }
+
+    @RequestMapping("selectLike")
+    public List<Productinfo> selectLike(@RequestParam String pName){
+        return psi.selectLike(pName);
     }
 }

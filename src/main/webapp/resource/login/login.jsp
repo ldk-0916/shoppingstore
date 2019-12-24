@@ -167,6 +167,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                $("#msg2").html("用户名已存在")
              } else if (data == "yes") {
                $("#msg2").html("注册成功")
+
              } else {
                $("#msg2").html("注册失败")
              }

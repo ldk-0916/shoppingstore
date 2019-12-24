@@ -58,6 +58,7 @@
 
 <script>
     $(function(){
+
          /*根据商品类型，查出所有的商品*/
         $(".tcdPageCode").createPage({
             pageCount: 60,

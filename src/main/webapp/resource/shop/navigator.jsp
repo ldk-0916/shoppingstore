@@ -83,9 +83,9 @@
 <body>
 <div class='intro'>
     <div class="search d1">
-        <form>
-            <input type="text" placeholder="搜索从这里开始...">
-            <button type="submit"></button>
+        <form action="<%=basePath%>selectLike" method="post">
+            <input type="text" id="pName" placeholder="搜索从这里开始...">
+            <button type="submit" id="sub"></button>
         </form>
     </div>
     <div class='center'>

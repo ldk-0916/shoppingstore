@@ -443,6 +443,7 @@
                     success:function (data) {
                         if(data=="yes"){
                             $("#msg").html("支付成功")
+                            //window.location.href="<%=basePath%>resource/shop/orders.jsp";
                         }else{
                             $("#msg").html("支付失败")
                         }
